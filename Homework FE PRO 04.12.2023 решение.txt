@@ -1,0 +1,101 @@
+
+function subtract() {
+  
+    let input1Value = document.getElementById('input1').value;
+    let input2Value = document.getElementById('input2').value;
+
+    let num1 = Number(input1Value);
+    let num2 = Number(input2Value);
+
+   
+    let result = num1 - num2;
+
+    let resultString = 'Результат: ' + num1 + ' - ' + num2 + ' = ' + result;
+
+
+    document.querySelector('.result').textContent = resultString;
+}
+console.log(8 - 4);
+
+
+function subtract() {
+    let input1Value = document.getElementById('input1').value;
+    let input2Value = document.getElementById('input2').value;
+
+  
+    let num1 = Number(input1Value);
+    let num2 = Number(input2Value);
+
+    let result = num1 * num2;
+
+   
+    let resultString = 'Результат: ' + num1 + ' * ' + num2 + ' = ' + result;
+
+  
+    document.querySelector('.result').textContent = resultString;
+}
+console.log(3 * 4);
+
+
+function divide() {
+  
+    let input1Value = document.querySelector('.input-1').value;
+    let input2Value = document.querySelector('.input-2').value;
+
+  
+    let num1 = Number(input1Value);
+    let num2 = Number(input2Value);
+
+    if (num2 === 0) {
+        alert("На 0 делить нельзя");
+        return;
+    }
+
+    let result = num1 / num2;
+
+    let resultString = 'Результат: ' + num1 + ' / ' + num2 + ' = ' + result;
+
+    document.querySelector('.result-1').textContent = resultString;
+}
+
+console.log(8 / 4);
+
+
+
+function getMinutes() {
+    // Получение значения из input-поля
+    let inputValue = document.querySelector('.input-1').value;
+
+    // Преобразование значения в число
+    let hours = Number(inputValue);
+
+    // Преобразование часов в минуты
+    let minutes = hours * 60;
+
+    // Формирование строки с результатом
+    let resultString = 'Результат: ' + hours + ' часа = ' + minutes + ' минут';
+
+    // Обновление содержимого элемента с классом result
+    document.querySelector('.result-1').textContent = resultString;
+}
+
+
+
+function calculateAverage() {
+    // Получение значений из трех input-полей
+    let input1Value = document.querySelector('.input-1').value;
+    let input2Value = document.querySelector('.input-2').value;
+    let input3Value = document.querySelector('.input-3').value;
+
+    // Преобразование значений в числа
+    let num1 = Number(input1Value);
+    let num2 = Number(input2Value);
+    let num3 = Number(input3Value);
+
+    // Вычисление среднего значения
+    let average = (num1 + num2 + num3) / 3;
+    let resultString = 'Среднее значение от: ' + num1 + ' + ' + num2 + ' + ' + num3 + ' = ' + average;
+
+    // Обновление содержимого элемента с классом result
+    document.querySelector('.result-1').textContent = resultString;
+}
